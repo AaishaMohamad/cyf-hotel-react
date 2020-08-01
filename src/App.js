@@ -10,7 +10,9 @@ const App = () => {
     <div className="App">
       <Heading />
       <TouristInfoCards />
-      <Bookings />
+      <div className="table">
+        <Bookings />
+      </div>
       <Footer
         data={[
           "123 Fake Street, London, E1 4UD",
