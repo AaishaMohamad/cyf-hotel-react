@@ -8,8 +8,16 @@ const Bookings = () => {
     console.info("TO DO!", searchVal);
   };
 
-  const [bookings, setBookings] = useState(FakeBookings);
-  console.log(bookings);
+  const [bookings, setBookings] = useState([]);
+
+  useEffect(() => {
+    fetch("https://cyf-react.glitch.me")
+      .then(res => res.json())
+      .then(data => {
+        console.log("Iam the Iam");
+        setBookings(data);
+      });
+  }, []);
 
   return (
     <div className="App-content">
