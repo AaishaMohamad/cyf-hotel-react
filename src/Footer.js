@@ -6,8 +6,8 @@ const Footer = props => {
       <footer>
         {" "}
         <ul>
-          {props.data.map(prop => {
-            return <li>{prop}</li>;
+          {props.data.map((prop, index) => {
+            return <li key={index}>{prop}</li>;
           })}
         </ul>
       </footer>

@@ -4,6 +4,7 @@ import Bookings from "./Bookings";
 import TouristInfoCards from "./TouristInfoCards";
 import "./App.css";
 import Footer from "./Footer";
+import Restaurant from "./Restaurant.js";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <TouristInfoCards />
       <div className="table">
         <Bookings />
+        <Restaurant />
       </div>
       <Footer
         data={[
